@@ -5,9 +5,7 @@ import {useRouter} from "next/navigation";
 import {useEffect} from "react";
 import { stringToBoolean } from "@/utils/utils";
 
-// const BASE_URL = `${process.env.API_BASE_URL as string}auth`;
-// const BASE_URL = "http://34.101.37.0:5000/api/auth";
-const BASE_URL = "http://localhost:5000/api/auth";
+const BASE_URL = `${process.env.API_BASE_URL as string}auth`;
 
 const decodeToken = (token: string) => {
 	const payloadBase64 = token.split(".")[1];

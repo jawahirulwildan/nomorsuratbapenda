@@ -5,9 +5,7 @@ import Cookies from "js-cookie";
 import { currentTimestamp } from "@/utils/utils";
 
 const token = Cookies.get("authToken")
-// const BASE_URL = `${process.env.API_BASE_URL as string}letter`;
-// const BASE_URL = "http://34.101.37.0:5000/api/letter";
-const BASE_URL = "http://localhost:5000/api/letter";
+const BASE_URL = `${process.env.API_BASE_URL as string}letter`;
 
 
 export const getLetters = async (params?: Record<string, string>) => {
