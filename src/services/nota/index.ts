@@ -5,7 +5,8 @@ import Cookies from "js-cookie";
 import { currentTimestamp } from "@/utils/utils";
 
 const token = Cookies.get("authToken")
-const BASE_URL = `${process.env.API_BASE_URL as string}nota`;
+// const BASE_URL = `${process.env.API_BASE_URL as string}nota`;
+const BASE_URL = "http://34.101.37.0:5000/api/nota";
 
 
 export const getNota = async (params?: Record<string, string>) => {
